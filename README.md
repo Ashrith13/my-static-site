@@ -1,0 +1,193 @@
+**Tools Required**
+
+* A GitHub account
+* Git installed (optional, or use GitHub web interface)
+* Basic `index.html` file (and `style.css` if customizing)
+
+ **Step-by-Step Guide**
+
+1. **Create an `index.html` file**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Host a Static Website with GitHub Pages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌐 Host a Static Website with GitHub Pages</h1>
+    <p class="subtitle">A step-by-step guide to publishing your first web page using GitHub</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>🛠 Objective</h2>
+      <p>Learn how to deploy a basic HTML website using GitHub Pages for free.</p>
+    </section>
+
+    <section class="card">
+      <h2>📦 Tools Required</h2>
+      <ul>
+        <li>GitHub account</li>
+        <li>Basic HTML knowledge</li>
+        <li>Optional: Git installed on your computer</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📋 Step-by-Step Guide</h2>
+      <ol>
+        <li>Create an <code>index.html</code> file with your website content.</li>
+        <li>Create a new repository on GitHub (e.g., <strong>my-static-site</strong>).</li>
+        <li>Upload your <code>index.html</code> (and <code>style.css</code> if any) to the repository.</li>
+        <li>Go to <strong>Settings &gt; Pages</strong> in the repo.</li>
+        <li>Choose the <strong>main</strong> branch and <strong>root</strong> folder, then save.</li>
+        <li>GitHub will give you a live link like:<br><code>https://your-username.github.io/my-static-site/</code></li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>🎨 Customization</h2>
+      <p>You can style your website with CSS for better presentation. Example shown here!</p>
+    </section>
+
+    <section class="card">
+      <h2>✅ Deliverables</h2>
+      <ul>
+        <li>Live website hosted via GitHub Pages</li>
+        <li>Public GitHub repository with your code</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+```
+
+*(Optional)* Create a `style.css` file
+
+```css
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #005a9c;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.1em;
+}
+
+/* Card sections */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #007acc;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+.card ul,
+.card ol {
+  padding-left: 20px;
+}
+
+.card code {
+  background: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+```
+
+---
+
+2. **Push to a New GitHub Repo**
+
+1. Go to [https://github.com](https://github.com)
+2. Click **New Repository**
+3. Name it (e.g., `my-static-site`)
+4. Upload your `index.html` (and `style.css`)
+
+   * You can drag-and-drop via the browser or use Git:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/your-username/my-static-site.git
+   git push -u origin main
+   ```
+
+---
+
+3. **Enable GitHub Pages**
+
+1. Go to your repository
+2. Click on **Settings**
+3. Scroll down to **Pages** (on the left sidebar)
+4. Under **Source**, select:
+
+   * **Branch:** `main`
+   * **Folder:** `/ (root)`
+5. Click **Save**
+
+---
+
+ 4. **Access Your Live Website**
+
+* GitHub will generate a URL like:
+  `https://your-username.github.io/my-static-site/`
+* Wait \~30 seconds, then open it in your browser.
+
+---
+5. **Customize With CSS**
+
+* Modify your `style.css` or add inline styles
+* Push changes to GitHub
+* Refresh the site (GitHub Pages updates automatically)
+
+---
